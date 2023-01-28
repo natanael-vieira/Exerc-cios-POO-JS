@@ -27,3 +27,10 @@ console.log(p1.nome)
 
 const d2 = new Disciplina(789, 'Lógica POO')
 console.log(d2.codigo)
+
+let a = 10;
+let b = a;
+
+b+=5;
+
+console.log(a, b)
