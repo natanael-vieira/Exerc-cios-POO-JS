@@ -31,8 +31,26 @@ class Produto {
     }
 }
 
+class Veiculo {
+    tamanho;
+    constructor(tamanho){
+        this.tamanho = tamanho;
+    }
+}
+
 const p1 = new Produto(337, "Meu Produto", 54, Produto.GRANDE);
-console.log(p1); /* Neste caso eu deveria utilizar a classe e não o 
+const p2 = new Produto(777, "Meu Produto", 78, Produto.MEDIO);
+console.log(p1); 
+console.log(p2);
+
+const v = new Veiculo(Produto.GRANDE); /* Posso usar um static em qualquer lugar 
+desde que eu consiga ter acesso ao código ou declaração da classe do produto, 
+ela vai funcionar como uma constante que pode ser utilizada em diferentes locais */
+console.log(v)
+
+
+
+/* Neste caso eu deveria utilizar a classe e não o 
 produto que foi criado para acessar as informações ocultas. Podemos considerar
 ela como uma constante, que não será mudada, pois neste caso de classes não tenho
 como criar uma variável let ou const dentro do escopo da classe.*/ 
