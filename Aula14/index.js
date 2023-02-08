@@ -18,6 +18,8 @@ class Livro extends Produto {
         super('Livro');
         this.titulo = titulo;
         this.numPag = numPag;
+        console.log(this.tipo);
+        console.log(`Você instanciou um objeto => ${super.getDados()}`)
     }
 }
 
