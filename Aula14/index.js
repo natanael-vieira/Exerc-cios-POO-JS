@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Produto {
     tipo;
@@ -18,13 +18,17 @@ class Livro extends Produto {
         super('Livro');
         this.titulo = titulo;
         this.numPag = numPag;
-        console.log(this.tipo);
+        console.log(this.getDados());
         console.log(`Você instanciou um objeto => ${super.getDados()}`)
+    }
+    exibeDadosLivro() {
+        console.log(`${this.getDados()}. ${this.titulo} - ${this.numPag} páginas.`);
     }
 }
 
 const prod = new Produto('Produto Genérico');
-console.log(prod.getDados());
+//console.log(prod.getDados());
 
 const liv = new Livro('Meu Livro', 122);
-console.log(liv.getDados());
+//console.log(liv.getDados());
+liv.exibeDadosLivro();
