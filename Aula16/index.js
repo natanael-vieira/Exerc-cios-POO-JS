@@ -1,37 +1,23 @@
 'use strict';
 
-class Produto {
-    #tipo;
-    #valor;
-    constructor(tipo, valor) {
-        this.#validaValor(valor);
-        this.#tipo = tipo;
-        this.#valor = valor;
+class Laboratorio {
+    #nome;
+    #capacidade;
+    constructor (nome, capacidade) {
+        this.#nome = nome;
+        this.#capacidade = capacidade;
     }
-    #validaValor(valor) {
-        if(typeof(valor) !== 'number') {
-            console.log('Valor inválido!');
-        }
+    getNome(nome) {
+        return this.#nome;
     }
-    getDados() {
-        return `
-        Tipo: ${this.#tipo}
-        Valor: ${this.#valor}`;
+    getCapacidade(capacidade) {
+        return this.#capacidade;
     }
-}
-
-class Livro extends Produto {
-    #titulo;
-    #numPag;
-    constructor(titulo, numPag, valor) {
-        super('Livro', valor);
-        this.#titulo = titulo;
-        this.#numPag = numPag;
+    setNome(nome) {
+        this.#nome = nome;
+    }
+    setCapacidade(capacidade) {
+        this.#capacidade = capacidade;
     }
 }
 
-const prod = new Produto('Produto Genérico',101);
-//console.log(prod.getDados())
-const liv = new Livro('Bible', 2975, 400);
-console.log(liv)
-console.log(liv.getDados())
