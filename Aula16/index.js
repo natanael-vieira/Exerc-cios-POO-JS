@@ -21,3 +21,7 @@ class Laboratorio {
     }
 }
 
+const lab = new Laboratorio('Informática', 37);
+console.log(lab.getCapacidade())
+lab.nome = 'Computação;'
+console.log(lab.nome)
