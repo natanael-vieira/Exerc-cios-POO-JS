@@ -8,7 +8,7 @@ class Produto {
         this.#tipo = tipo;
         this.#valor = valor;
     }
-    #validaValor() {
+    #validaValor(valor) {
         if(typeof(valor) !== 'number') {
             console.log('Valor inválido!');
         }
@@ -30,3 +30,8 @@ class Livro extends Produto {
     }
 }
 
+const prod = new Produto('Produto Genérico',101);
+//console.log(prod.getDados())
+const liv = new Livro('Bible', 2975, 400);
+console.log(liv)
+console.log(liv.getDados())
