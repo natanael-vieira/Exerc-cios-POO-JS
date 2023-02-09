@@ -1,34 +1,32 @@
 'use strict';
 
 class Produto {
-    tipo;
-    constructor(tipo) {
-        this.tipo = tipo;
+    #tipo;
+    #valor;
+    constructor(tipo, valor) {
+        this.#validaValor(valor);
+        this.#tipo = tipo;
+        this.#valor = valor;
+    }
+    #validaValor() {
+        if(typeof(valor) !== 'number') {
+            console.log('Valor inválido!');
+        }
     }
     getDados() {
         return `
-        Tipo: ${this.tipo}`;
+        Tipo: ${this.#tipo}
+        Valor: ${this.#valor}`;
     }
 }
 
 class Livro extends Produto {
-    titulo;
-    numPag;
-    constructor(titulo, numPag) {
-        super('Livro');
-        this.titulo = titulo;
-        this.numPag = numPag;
-        console.log(this.getDados());
-        console.log(`Você instanciou um objeto => ${super.getDados()}`)
-    }
-    exibeDadosLivro() {
-        console.log(`${this.getDados()}. ${this.titulo} - ${this.numPag} páginas.`);
+    #titulo;
+    #numPag;
+    constructor(titulo, numPag, valor) {
+        super('Livro', valor);
+        this.#titulo = titulo;
+        this.#numPag = numPag;
     }
 }
 
-const prod = new Produto('Produto Genérico');
-//console.log(prod.getDados());
-
-const liv = new Livro('Meu Livro', 122);
-//console.log(liv.getDados());
-liv.exibeDadosLivro();
