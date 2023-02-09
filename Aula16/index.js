@@ -24,4 +24,4 @@ class Laboratorio {
 const lab = new Laboratorio('Informática', 37);
 console.log(lab.getCapacidade())
 lab.nome = 'Computação;'
-console.log(lab.nome) // Só vai aparecer no console porque foi atribuído um valor logo acima, mas que fora isso, como o atributo está privado ele não foi alterado.
+console.log(lab.nome) // Só vai aparecer no console porque foi atribuído um valor logo acima, mas que fora isso, como o atributo está privado ele não foi alterado. Neste caso para alterar o atributo nome eu precisaria incluir a palavra reservada set
