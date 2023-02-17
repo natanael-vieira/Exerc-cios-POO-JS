@@ -1,4 +1,4 @@
-import {CupomDesconto} from "./cupomDesconto";
+import {CupomDesconto} from "./cupomDesconto.js";
 
 'use strict';
 
