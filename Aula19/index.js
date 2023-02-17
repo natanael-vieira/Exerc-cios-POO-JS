@@ -1,6 +1,6 @@
-'use strict';
+import {CupomDesconto} from "./cupomDesconto";
 
-import { cupomDesconto } from "./cupomDesconto";
+'use strict';
 
 class cliente {
     #nome;
@@ -8,7 +8,7 @@ class cliente {
     #cupom;
     constructor(nome) {
         this.#nome = nome;
-        this.#cupom = new cupomDesconto();
+        this.#cupom = new CupomDesconto();
     }
     getBeneficios() {
         this.#cupom.getDesconto(this.#gastosAcumulados);
