@@ -19,6 +19,8 @@ class cliente {
 }
 
 const clienteNovo = new cliente('Abigail');
-clienteNovo.setGasto(2000)
+clienteNovo.setGasto(2000);
+clienteNovo.setGasto(2000);
+clienteNovo.setGasto(7000);
 clienteNovo.getBeneficios();
 //console.log(clienteNovo);
