@@ -1,4 +1,4 @@
-export class cupomDesconto {
+export class CupomDesconto {
     #desconto1 = 10;
     #desconto2 = 20;
     constructor() { }
