@@ -1,4 +1,4 @@
-import { Parcela } from "./parcela";
+import { Parcela } from "./parcela.js";
 
 export class Financiamento {
     #taxaJuros; //juros mensais
