@@ -4,6 +4,10 @@ body{
     font: 11pt tahoma;
 }
 
+tr:nth-child(even) {
+    background-color: darkorange;
+}
+
 table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
