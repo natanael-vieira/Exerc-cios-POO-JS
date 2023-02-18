@@ -1,3 +1,5 @@
+import { Financiamento } from "financiamento.js";
+
 const comCarencia = document.querySelector('#comCarencia');
 const listaSuspensa = document.querySelector('#listaSuspensa')
 
@@ -8,3 +10,4 @@ comCarencia.addEventListener('change', function(){
         listaSuspensa.setAttribute('hidden', 'hidden');
     }
 });
+
