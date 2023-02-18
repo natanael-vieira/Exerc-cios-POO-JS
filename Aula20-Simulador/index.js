@@ -1,4 +1,4 @@
-import { Financiamento } from "financiamento.js";
+import { Financiamento } from "./financiamento";
 
 const comCarencia = document.querySelector('#comCarencia');
 const listaSuspensa = document.querySelector('#listaSuspensa')
