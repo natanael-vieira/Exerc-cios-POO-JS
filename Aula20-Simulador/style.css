@@ -5,7 +5,7 @@ body{
 }
 
 tr:nth-child(even) {
-    background-color: darkorange;
+    background-color: goldenrod;
 }
 
 table, th, td {
