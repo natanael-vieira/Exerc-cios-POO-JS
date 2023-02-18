@@ -37,4 +37,7 @@ export class Financiamento {
             }
         }
     }
+    getParcelas() {
+        return this.#parcelas
+    }
 }
