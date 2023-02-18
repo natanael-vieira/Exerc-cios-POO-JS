@@ -27,4 +27,10 @@ export class Financiamento {
             this.#parcelas.push(new Parcela(numero, valor, juros, amortizacao, saldo));
         }
     }
+    exibeParcelas() {
+        const parcelas = this.#parcelas.slice(1);
+        for(const parcela of parcelas) {
+            
+        }
+    }
 }
